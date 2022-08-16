@@ -1,0 +1,68 @@
+body {
+    display:grid;
+    background-color: aqua;
+    font-size:24px;
+    text-align: center;
+}
+.result {
+    grid-column:1/ -1;
+    display:flex;
+    flex-direction: column;
+    background-color:rgb(0,0,0,0.75);
+    height:80px;
+    justify-content:space-around;
+    padding:10px;
+    align-items: flex-end;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.result #before {
+    font-size:24px;
+    color:lightgray;
+}
+.result #after {
+    font-size:32px;
+    color:white;
+}
+
+.btns {
+    display:grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(5,100px);
+    height:100px;
+}
+
+button {
+    border-radius: 8px;
+    font-size: 24px;
+}
+
+.container {
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns #plus, #minus, #divide, #mult {
+    background-color: blue;
+    font-size: larger;
+}
+
+.btns #power {
+    background-color: rgb(127, 255, 144);
+    font-size: larger;
+}
+
+.btns #equal {
+    background-color: blueviolet;
+    font-size: xx-large;
+}
+
+.btns #del {
+    background-color: red;
+}
+
+.btns #clean {
+    background-color: aliceblue;
+}
